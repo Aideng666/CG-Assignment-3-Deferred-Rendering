@@ -415,7 +415,7 @@ int main() {
 			obj8.get<Transform>().SetLocalScale(0.4f, 0.4f, 0.4f);
 		}
 
-		GameObject obj9 = scene->CreateEntity("Box 2");
+		GameObject obj9 = scene->CreateEntity("Box 3");
 		{
 			VertexArrayObject::sptr vao = ObjLoader::LoadFromFile("models/Box.obj");
 			obj9.emplace<RendererComponent>().SetMesh(vao).SetMaterial(boxMat);
